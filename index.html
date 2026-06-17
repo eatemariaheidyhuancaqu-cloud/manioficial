@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MANI - Descubre el potencial del maní</title>
+
+<link rel="stylesheet" href="estilo.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="rainContainer"></div>
+
+<!-- ===================== -->
+<!-- NAV -->
+<!-- ===================== -->
+
+<nav>
+
+<img src="logo.png" alt="Logo" class="logo">
+
+<ul>
+
+<li><a href="#inicio">Inicio</a></li>
+
+<li><a href="#recetas">Recetas</a></li>
+
+<li><a href="#laboratorio">Laboratorio</a></li>
+
+<li><a href="#tutorial">Caja Tutorial</a></li>
+
+</ul>
+
+</nav>
+
+<!-- ===================== -->
+<!-- HERO -->
+<!-- ===================== -->
+
+<header id="inicio">
+
+<div class="hero">
+
+<h1>
+Descubre todo lo que puedes hacer con el maní crudo
+</h1>
+
+<p>
+
+Recetas deliciosas, reutilización creativa y experiencias divertidas.
+
+</p>
+
+<div class="heroButtons">
+
+<button class="btn" onclick="rainPeanuts()">
+🥜 Lluvia de Maní
+</button>
+
+<a href="#recetas" class="btn secondaryBtn">
+Explorar
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- ===================== -->
+<!-- RECETAS -->
+<!-- ===================== -->
+
+<section id="recetas">
+
+<h2>Recetas con Maní Crudo</h2>
+
+<p class="sectionText">
+
+Aprende diferentes formas de preparar y disfrutar el maní.
+
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="https://frutossecosentupuerta.cl/wp-content/uploads/2021/07/MANI-TOSTADO-NATURAL-SIN-SAL-2.jpg" alt="Receta 1">
+
+<a href="https://youtube.com/shorts/UYbmn4zsWqE?si=vi7WbGb7f69WMThR" target="_blank" class="recipeBtn">
+▶ Ver en YouTube
+</a>
+
+<h3>Maní Tostado</h3>
+
+<p>
+Aprende como tostar tu mani crudo, ¡facíl y sencillo de prepararlo!
+</p>
+
+
+</div>
+
+<div class="card">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu72gw5gWpGRr_5xCtKHHx0IVyKcn6ong7z2wNwl-reseCXVcO1HnqinQ&s=10" alt="Receta 2">
+
+<a href="https://youtube.com/shorts/9KsCzZw2Arc?si=cKDi1mItuL8wmlnC" target="_blank" class="recipeBtn">
+▶ Ver en YouTube
+</a>
+
+<h3>Mantequilla de Maní</h3>
+
+<p>
+Una deliciosa mantequilla de mani para el desayuno, ¡tienes que probarla ya!
+</p>
+
+
+
+</div>
+
+<div class="card">
+
+<img src="https://s3.amazonaws.com/static.realcaliforniamilk.com/media/recipes_2/super-chocolate-chip-peanut-butter-cookies.jpg" alt="Receta 3">
+
+<a href="https://youtu.be/ssZSlp8-TDU?si=G-gp1_tPBngec1-K" target="_blank" class="recipeBtn">
+▶ Ver en YouTube
+</a>
+
+<h3>Galletas de Maní</h3>
+
+<p>
+Prueba estas esquisitas galletas hechas de mani, ¡un sabor verdaderamente único!
+</p>
+
+
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================== -->
+<!-- LABORATORIO -->
+<!-- ===================== -->
+
+<section id="laboratorio">
+
+<h2>🥜Laboratorio del Maní</h2>
+
+<p class="sectionText">
+
+Haz clic en los objetos y descubre sus efectos.
+
+</p>
+
+<div class="iconos">
+
+<div class="icono" onclick="ollaMani()">
+🥣
+<h3>Olla</h3>
+</div>
+
+<div class="icono" onclick="sartenMani()">
+🍳
+<h3>Sartén</h3>
+</div>
+
+<div class="icono" onclick="campanaPlato()">
+🍽️
+<h3>Plato</h3>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================== -->
+<!-- TUTORIAL -->
+<!-- ===================== -->
+
+<section id="tutorial">
+
+<h2>♻️ Convierte tu Caja en una Pala</h2>
+
+<p class="sectionText">
+
+Dale una segunda vida a tu empaque siguiendo estos pasos.
+
+</p>
+
+<div class="tutorial-container">
+
+<button class="arrow" onclick="prevSlide()">
+❮
+</button>
+
+<div class="slide">
+
+<img
+id="tutorialImage"
+src="mani-04.png"
+alt="Tutorial">
+
+<h3 id="stepTitle">
+
+Paso 1 - Preparar la caja
+
+</h3>
+
+</div>
+
+<button class="arrow" onclick="nextSlide()">
+❯
+</button>
+
+</div>
+
+<div class="dots">
+
+<span id="dot1" class="active"></span>
+<span id="dot2"></span>
+<span id="dot3"></span>
+<span id="dot4"></span>
+
+</div>
+
+</section>
+
+<!-- ===================== -->
+<!-- FOOTER -->
+<!-- ===================== -->
+
+<footer>
+
+<img src="logo.png" class="footerLogo">
+
+<h3>MANI</h3>
+
+<p>
+
+Recetas • Reutilización • Creatividad
+
+</p>
+
+<p>
+
+© 2026 Todos los derechos reservados
+
+</p>
+
+</footer>
+
+<script src="mani.js"></script>
+
+</body>
+</html>
